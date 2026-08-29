@@ -7,7 +7,7 @@ app = FastAPI(
 )
 
 @app.get("/")
-def test():
+def root():
     return {
         "message" : "Task API is running"
     }
