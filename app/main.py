@@ -11,3 +11,9 @@ def root():
     return {
         "message" : "Task API is running"
     }
+
+@app.get("/health")
+def check_health():
+    return {
+        "status" : "healthy"
+    }
